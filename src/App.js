@@ -44,6 +44,9 @@ if (mode){
     setBoxPosition({ x: position.x, y: position.y })
     setBoxVisible(true)
   }}
+
+  localStorage.clear() // GIVING ERR
+
   return (
     <MainContext.Provider value={data} >
       
