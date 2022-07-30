@@ -10,7 +10,7 @@ function App() {
 
 
   const screen = useRef()
-  const [mode, setMode] = useState(false)
+  const [mode, setMode] = useState(true)
   const [position, setPosition] = useState({
     x: 0, y: 0
   })
@@ -46,7 +46,8 @@ if (mode){
   }}
   return (
     <MainContext.Provider value={data} >
-      <div ref={screen} tabIndex={0} onMouseMove={handleMouseMove} onClick={handleClick} onKeyUp={handleKeyUp} className={`screen ${mode && `editable`} `}>
+      
+      <div ref={screen} tabIndex={0}  onMouseMove={handleMouseMove} onClick={handleClick} onKeyUp={handleKeyUp} className={`screen ${mode && `editable`} `}>
         {mode && (<div>Yorum Modu Aktif </div>)}
         {mode && <LeaveCommentText />}
 
