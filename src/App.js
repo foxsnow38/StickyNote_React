@@ -10,7 +10,7 @@ function App() {
 
 
   const screen = useRef()
-  const [mode, setMode] = useState(true)
+  const [mode, setMode] = useState(false)
   const [position, setPosition] = useState({
     x: 0, y: 0
   })
