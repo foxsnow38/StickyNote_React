@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { useState } from 'react/cjs/react.development'
+import React, { useContext,useState } from 'react'
+    
 import MainContext from '../MainContext'
 
 export default function NoteBox() {
